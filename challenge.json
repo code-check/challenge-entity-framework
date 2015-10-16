@@ -1,0 +1,11 @@
+﻿{
+    "editable": [
+        "Models/*",
+        "Main.cs"
+    ],
+    "excludes": [
+        ".gitignore",
+        "challenge.json"
+    ],
+    "test": "nunit-console target/EntityFrameworkChallenge.dll"
+}
