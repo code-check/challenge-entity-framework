@@ -12,7 +12,9 @@ namespace EntityFrameworkChallenge
         {
             //BEGIN_CHALLENGE
             using (var context = new ChallengeContext())
-                return context.Users.Count(x => x.Name.Contains(filter) || x.Email.Contains(filter));
+                return context.Users
+                    .ToArray() // For some reason the EF connector ends up using CHARINDEX, which SQLite does not support
+                    .Count(x => x.Name.Contains(filter) || x.Email.Contains(filter));
             //END_CHALLENGE
             throw new NotImplementedException();
         }

@@ -1,6 +1,10 @@
 ﻿## Information
 The goal of this challenge is to solve a few basic problems in C# using the EntityFramework.
 
+Please solve this challenge without using queries in a string format. (Use LINQ instead)
+
+***Note:*** due to compatibility issues it is not possible to use '.Contains' within queries, please cast it to an Array or Enumerable in this case. 
+
 #### Problem 1
 Create a function that counts all users filtered by their Name or Email, use the "CountUsers" function for this.
 
