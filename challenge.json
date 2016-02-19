@@ -7,5 +7,10 @@
         ".gitignore",
         "challenge.json"
     ],
-    "test": "nunit-console target/EntityFrameworkChallenge.dll"
+    "test": "nunit-console target/EntityFrameworkChallenge.dll",
+    "tags": [
+        "EntityFramework",
+        "C#",
+        "Database"
+    ]
 }
